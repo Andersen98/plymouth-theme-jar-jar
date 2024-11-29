@@ -1,0 +1,10 @@
+[Plymouth Theme]
+Name=jar-jar
+Description=Orange kitty goes meowww
+Comment=*bites your ankle*
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/jar-jar
+ScriptFile=/usr/share/plymouth/themes/jar-jar/jar-jar.script
+
