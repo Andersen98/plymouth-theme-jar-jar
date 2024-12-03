@@ -1,10 +1,18 @@
-{ stdenv }:
+{
+  stdenv,
+  fetchFromGitHub,
+}:
 
 stdenv.mkDerivation {
   pname = "plymouth-theme-jar-jar";
   version = "v1.0";
 
-  src = ./.;
+  src = fetchFromGitHub { 
+    owner = "Andersen98";
+    repo = "plymouth-theme-jar-jar";
+    rev = "v1.0";
+    hash = "sha256-eP0SGzpMrX5YR69uEMz8iSSYKrlUoU9EfF3pabaOjpE=";
+  };
 
   installPhase = ''
     mkdir -p $out/share/plymouth/themes
